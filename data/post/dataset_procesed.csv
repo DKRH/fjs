@@ -1,0 +1,72 @@
+`label`label_name`tweet_tokens_stemmed`text_token
+0`2`netral`['tunggu', 'psbb']`tunggu psbb
+1`2`netral`['ngerti', 'taaahh', 'saiki', 'sc', 'ig', 'kulinerdisolo']`ngerti taaahh saiki sc ig kulinerdisolo
+2`0`negatif`['situasi', 'gawat', 'psbb', 'jalan', 'minggu', 'positip', 'lonjak', 'psbb', 'mempan', 'perintah', 'hrs', 'tindak', 'ketat', 'seblm', 'ledak', 'china', 'positip', 'kota', 'dilockdown', 'anda', 'ketat']`situasi gawat psbb jalan minggu positip lonjak psbb mempan perintah hrs tindak ketat seblm ledak china positip kota dilockdown anda ketat
+3`1`positif`['sabtu', 'raya', 'rindu', 'barangkali', 'psbb', 'temu', 'martabak', 'manis', 'suka', 'cangkir', 'kopi', 'favorulitku']`sabtu raya rindu barangkali psbb temu martabak manis suka cangkir kopi favorulitku
+4`0`negatif`['paket', 'tgl', 'sampe', 'bandung', 'pdahal', 'estimasi', 'smpe', 'tgl', 'januari', 'psbb', 'ekspedisi', 'alami', 'psbb', 'sampe', 'tingkatin', 'layan', 'pilih']`paket tgl sampe bandung pdahal estimasi smpe tgl januari psbb ekspedisi alami psbb sampe tingkatin layan pilih
+5`2`netral`['psbb', 'enam']`psbb enam
+6`0`negatif`['jogja', 'ora', 'psbb', 'psim']`jogja ora psbb psim
+7`2`netral`['sabtu', 'psbb', 'bosen', 'rumah', 'pain', 'cerita', 'request', 'lagu', 'nama', 'umur', 'alamat', 'dapat', 'lagu']`sabtu psbb bosen rumah pain cerita request lagu nama umur alamat dapat lagu
+8`0`negatif`['sekolah', 'psbblainnya', 'nol', 'bodoh', 'luuu']`sekolah psbblainnya nol bodoh luuu
+9`1`positif`['seaturtle', 'apa', 'besarrin', 'memang', 'mlnggar', 'psbb', 'ketat', 'ngumpul', 'vaksin', 'ngumpul', 'haddeh']`seaturtle apa besarrin memang mlnggar psbb ketat ngumpul vaksin ngumpul haddeh
+10`0`negatif`['betulhrspsbb', 'new', 'noemalkalau', 'karang', 'psbbdiperketat', 'rafiand', 'ahok', 'pasal', 'dahsathukumannya', 'umur', 'hidup', 'duniadagelan']`betulhrspsbb new noemalkalau karang psbbdiperketat rafiand ahok pasal dahsathukumannya umur hidup duniadagelan
+11`2`netral`['mbanya', 'komentar', 'tweet', 'banding', 'psbb', 'transisi', 'ketat', 'selenggara', 'karantina', 'sehat', 'mbanya', 'komentar', 'guna', 'istilah']`mbanya komentar tweet banding psbb transisi ketat selenggara karantina sehat mbanya komentar guna istilah
+12`0`negatif`['nerapin', 'psbb', 'batas', 'tutup', 'jam', 'malam', 'jam', 'batas', 'unjung', 'laku', 'kek']`nerapin psbb batas tutup jam malam jam batas unjung laku kek
+13`1`positif`['jogja', 'nama', 'pstkm', 'psbb']`jogja nama pstkm psbb
+14`2`netral`['makan', 'pinggir', 'jalan', 'nerapin', 'psbb']`makan pinggir jalan nerapin psbb
+15`1`positif`['rensa', 'untung', 'psbb', 'wkwkkw']`rensa untung psbb wkwkkw
+16`0`negatif`['realita', 'psbb', 'terus', 'dicuekin', 'rakyat', 'level', 'benar', 'peduli', 'psbb', 'bansos', 'lain', 'yummy', 'rumah', 'sakit', 'tetep', 'klepek', 'mending', 'kuat', 'rs', 'lupa', 'psbb', 'rs', 'butuh']`realita psbb terus dicuekin rakyat level benar peduli psbb bansos lain yummy rumah sakit tetep klepek mending kuat rs lupa psbb rs butuh
+17`2`netral`['renung', 'smt', 'asa', 'kemarin', 'pandemi', 'psbb', 'uts', 'uas', 'libur', 'smt', 'sudah', 'jelang', 'uas']`renung smt asa kemarin pandemi psbb uts uas libur smt sudah jelang uas
+18`2`netral`['psbb', 'salah', 'via', 'virtual', 'pdkt']`psbb salah via virtual pdkt
+19`1`positif`['braw', 'ub', 'fakultas', 'fia', 'gedung', 'sekretariat', 'lof', 'lkm', 'dibolehin', 'mahasiswa', 'tgl', 'psbb', 'makasih']`braw ub fakultas fia gedung sekretariat lof lkm dibolehin mahasiswa tgl psbb makasih
+20`0`negatif`['tanggal', 'psbb', 'yaampun', 'sedih', 'bgtttttt']`tanggal psbb yaampun sedih bgtttttt
+21`2`netral`['mingdep', 'mulaibkena', 'shift', 'psbb', 'kantor', 'rangin', 'dikerjain', 'lawan', 'kantuk']`mingdep mulaibkena shift psbb kantor rangin dikerjain lawan kantuk
+22`0`negatif`['cabecabean', 'ajar', 'krystal', 'noona', 'jago', 'make', 'up', 'hahaha', 'psbb']`cabecabean ajar krystal noona jago make up hahaha psbb
+23`1`positif`['pagi', 'sarap', 'keburu', 'masak', 'keburu', 'wfh', 'psbb', 'hujan', 'tenang', 'ready', 'jam', 'pagi', 'hlo', 'cabang', 'soto', 'sedaap', 'hj', 'widodo', 'psbb', 'saat', 'lapar']`pagi sarap keburu masak keburu wfh psbb hujan tenang ready jam pagi hlo cabang soto sedaap hj widodo psbb saat lapar
+24`1`positif`['sekian', 'xoxo', 'stay', 'safe', 'healthy', 'inget', 'psbb']`sekian xoxo stay safe healthy inget psbb
+25`0`negatif`['tiwas', 'tuku', 'klambi', 'hypebeast', 'psbb']`tiwas tuku klambi hypebeast psbb
+26`2`netral`['psbb']`psbb
+27`1`positif`['psbb']`psbb
+28`1`positif`['psbb', 'jatah', 'work', 'home', 'hihi']`psbb jatah work home hihi
+29`1`positif`['jakarta', 'psbb', 'hati']`jakarta psbb hati
+30`0`negatif`['ganggu', 'minggu', 'ganggu', 'psbb', 'ngerjain', 'tugas', 'first', 'mediiaaa']`ganggu minggu ganggu psbb ngerjain tugas first mediiaaa
+31`2`netral`['psbb', 'kgn', 'psbb']`psbb kgn psbb
+32`0`negatif`['kasih', 'bansos', 'bahan', 'makan', 'rumah', 'psbb', 'liar', 'anak', 'komplek', 'atur', 'orangtuanya', 'diam', 'rumah', 'psbb', 'lockdown', 'anak', 'gila', 'stresss']`kasih bansos bahan makan rumah psbb liar anak komplek atur orangtuanya diam rumah psbb lockdown anak gila stresss
+33`2`netral`['jual', 'netflix', 'premium', 'antihold', 'sharing', 'private', 'bln', 'shar', 'prv', 'app', 'cek', 'pinned', 'murah', 'spotify', 'disney', 'hotstar', 'apple', 'music', 'viu', 'youtube', 'wetv', 'scribd', 'iflix', 'iqiyi', 'amazon', 'prime', 'video', 'hbo', 'psbb', 'jawabali', 'sejeong', 'kim', 'mingyu', 'jjk', 'taekook', 'nussa']`jual netflix premium antihold sharing private bln shar prv app cek pinned murah spotify disney hotstar apple music viu youtube wetv scribd iflix iqiyi amazon prime video hbo psbb jawabali sejeong kim mingyu jjk taekook nussa
+34`0`negatif`['skrng', 'psbb']`skrng psbb
+35`1`positif`['suami', 'dampak', 'psbbjadi', 'ngopi']`suami dampak psbbjadi ngopi
+36`1`positif`['papua', 'starting', 'implement', 'psbb']`papua starting implement psbb
+37`1`positif`['psbb', 'not', 'daster', 'forever']`psbb not daster forever
+38`1`positif`['edisi', 'januari', 'panjang', 'psbb', 'kota', 'tangerang']`edisi januari panjang psbb kota tangerang
+39`0`negatif`['ppkm', 'ajar', 'diplesetin']`ppkm ajar diplesetin
+40`2`netral`['psbb', 'ancene', 'crazy', 'rich', 'suroboyo']`psbb ancene crazy rich suroboyo
+41`1`positif`['psbb', 'weekend', 'suka', 'rapid', 'test', 'camat', 'bom', 'pasar', 'jam']`psbb weekend suka rapid test camat bom pasar jam
+42`0`negatif`['gilir', 'perintah', 'tindak', 'nanggulangin', 'covid', 'kaya', 'psbb', 'masyarakat', 'nyalahin', 'perintah', 'salah', 'perintah']`gilir perintah tindak nanggulangin covid kaya psbb masyarakat nyalahin perintah salah perintah
+43`0`negatif`['iso', 'ngakon', 'psbb', 'ro', 'tutup', 'thok', 'solusi', 'ono', 'blas', 'ancen', 'mengkis', 'tenan', 'opo', 'maneh', 'sing', 'buka', 'iyo', 'jam']`iso ngakon psbb ro tutup thok solusi ono blas ancen mengkis tenan opo maneh sing buka iyo jam
+44`0`negatif`['kontrol', 'pimpin', 'panjang', 'psbb', 'doank']`kontrol pimpin panjang psbb doank
+45`0`negatif`['sumpek', 'njing', 'psbb', 'maneh', 'kon', 'omah', 'ngerti', 'sms', 'kon', 'suntik', 'vaksin']`sumpek njing psbb maneh kon omah ngerti sms kon suntik vaksin
+46`2`netral`['psbb', 'sana']`psbb sana
+47`0`negatif`['rezim', 'jarang', 'benar', 'ngurus', 'sampe', 'substansi', 'fokus', 'batas', 'seremonial', 'jamu', 'anti', 'covid', 'psbb', 'nir', 'manfaat', 'urus', 'vaksin', 'pake', 'influencer', 'top', 'pokok']`rezim jarang benar ngurus sampe substansi fokus batas seremonial jamu anti covid psbb nir manfaat urus vaksin pake influencer top pokok
+48`2`netral`['vaksinasi', 'mas', 'psbb']`vaksinasi mas psbb
+49`1`positif`['parah', 'banjir', 'kalsel', 'bos', 'pikir', 'tutup', 'toko', 'kiamat', 'psbb', 'buka', 'toko', 'mundur', 'jadwal', 'buka', 'toko', 'jam', 'siang']`parah banjir kalsel bos pikir tutup toko kiamat psbb buka toko mundur jadwal buka toko jam siang
+50`0`negatif`['psbbppkm', 'ujung', 'rakyat', 'salah']`psbbppkm ujung rakyat salah
+51`0`negatif`['wengi', 'psbb', 'awan', 'karepe', 'dewek']`wengi psbb awan karepe dewek
+52`1`positif`['perintah', 'putus', 'laku', 'batas', 'giat', 'masyarakat', 'ppkm', 'psbb', 'jawabali', 'tanggal', 'januari', 'giat', 'ajar', 'ajar', 'sekolahsekolah', 'lingkung', 'terap', 'ajar', 'jarak']`perintah putus laku batas giat masyarakat ppkm psbb jawabali tanggal januari giat ajar ajar sekolahsekolah lingkung terap ajar jarak
+53`1`positif`['psbb', 'eula']`psbb eula
+54`1`positif`['balikk', 'kesini', 'ayo', 'ngeskrim', 'bakso', 'angringan', 'bukit', 'nun', 'jauhh', 'tapi', 'psbb']`balikk kesini ayo ngeskrim bakso angringan bukit nun jauhh tapi psbb
+55`1`positif`['wait', 'influencer', 'bayar', 'travel', 'pergipergi', 'perintah', 'bayar', 'influencer', 'stay', 'rumah', 'psbb']`wait influencer bayar travel pergipergi perintah bayar influencer stay rumah psbb
+56`1`positif`['pls', 'psbb', 'beneran', 'diterusin', 'nurunin', 'kapasitas', 'korporat', 'its', 'getting', 'scary', 'work', 'out']`pls psbb beneran diterusin nurunin kapasitas korporat its getting scary work out
+57`2`netral`['not', 'kpop', 'twt', 'related', 'let', 'this', 'ajar', 'bahasa', 'inggris', 'psbb', 'jauh', 'flexible', 'dont', 'worry', 'ikut', 'english', 'online', 'private', 'class', 'via', 'messenger', 'google', 'meet', 'jamin', 'seru', 'mudah', 'fee', 'kmeeting']`not kpop twt related let this ajar bahasa inggris psbb jauh flexible dont worry ikut english online private class via messenger google meet jamin seru mudah fee kmeeting
+58`0`negatif`['bilang', 'psbb', 'apa', 'nama', 'pengaruh', 'antri', 'stasiun', 'kondisi', 'seblum', 'kereta', 'kondisi', 'penuh', 'jaga', 'jarak', 'jamjam', 'pulang', 'kantor']`bilang psbb apa nama pengaruh antri stasiun kondisi seblum kereta kondisi penuh jaga jarak jamjam pulang kantor
+59`1`positif`['ingin', 'nonton', 'asih', 'tgl', 'psbb', 'jakarta']`ingin nonton asih tgl psbb jakarta
+60`1`positif`['psbb', 'nongkrong', 'dmna', 'gabut']`psbb nongkrong dmna gabut
+61`0`negatif`['data', 'sg', 'bubarke', 'njuk', 'nehi', 'beras', 'lauk', 'pauk', 'psbb', 'akeh', 'opo', 'menungso', 'kaku', 'atur', 'atur', 'jare', 'jembut']`data sg bubarke njuk nehi beras lauk pauk psbb akeh opo menungso kaku atur atur jare jembut
+62`0`negatif`['tibatiba', 'pulang', 'jkt', 'psbb', 'sampe', 'shit', 'suka']`tibatiba pulang jkt psbb sampe shit suka
+63`1`positif`['jog', 'batas', 'magelangjogja', 'pemeriksan', 'psbb', 'makasih']`jog batas magelangjogja pemeriksan psbb makasih
+64`2`netral`['malang', 'psbb', 'arema', 'boss']`malang psbb arema boss
+65`0`negatif`['solo', 'psbb', 'apik', 'mesakne', 'dagang', 'yoan', 'psbb']`solo psbb apik mesakne dagang yoan psbb
+66`0`negatif`['salah', 'masyarakat', 'disalahsalahin', 'gilir', 'nurut', 'nuduh', 'perintah', 'dukung', 'masyarakat', 'mau']`salah masyarakat disalahsalahin gilir nurut nuduh perintah dukung masyarakat mau
+67`1`positif`['tempat', 'tertib', 'hindar', 'kerumun', 'masker', 'cuci', 'tangan', 'sabun', 'pasti', 'streaming', 'video', 'pakai', 'lancar', 'jaya', 'mantap']`tempat tertib hindar kerumun masker cuci tangan sabun pasti streaming video pakai lancar jaya mantap
+68`1`positif`['nixon', 'mei', 'langsung', 'psbb']`nixon mei langsung psbb
+69`1`positif`['youre', 'still', 'outside', 'non', 'essential', 'reason', 'home', 'mandek', 'sampe', 'selesai', 'psbb', 'everyone', 'work', 'this', 'might', 'have', 'chance', 'actual', 'new', 'normal', 'middle', 'this', 'year']`youre still outside non essential reason home mandek sampe selesai psbb everyone work this might have chance actual new normal middle this year
+70`1`positif`['tahan', 'stok', 'tanggal', 'januari', 'jateng', 'diy', 'psbb', 'bbm', 'subsidi', 'bbm', 'non', 'subsidi', 'komitmen', 'pertamina', 'andal', 'layan', 'tahan', 'energi']`tahan stok tanggal januari jateng diy psbb bbm subsidi bbm non subsidi komitmen pertamina andal layan tahan energi
