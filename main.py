@@ -330,11 +330,12 @@ def naivebayes():
     word_cloud_pos=get_wordcloud(dict(a5[['term','TF-IDF_dict']].values))
     word_cloud_neg=get_wordcloud(dict(a6[['term','TF-IDF_dict']].values))
     word_cloud_net=get_wordcloud(dict(a7[['term','TF-IDF_dict']].values))
-
+    print(confusion_matrix[0])
     return render_template("nb.html",
                                     show=show.to_html(classes="table"),
                                     confusion_matrix=confusion_matrix.to_html(classes="table"),
                                     akurasi=round(akurasi(confusion_matrix), 2) * 100,
+                                    pr=precisionrecall(confusion_matrix).to_html(classes="table"),
                                     barJSON=kemunculan_kata,
                                     pieJSON=diagram_dataset_pie,
                                     img_data_pos=word_cloud_pos,

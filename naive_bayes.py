@@ -15,6 +15,56 @@ def akurasi(confusion_matrix):
     )
     return  a/b 
 
+def precisionrecall(confusion_matrix):
+    #a = (confusion_matrix.iloc[0][0]+confusion_matrix.iloc[1][0]+confusion_matrix.iloc[2][0])
+    c1 = confusion_matrix.iloc[0]
+    c2 = confusion_matrix.iloc[1]
+    c3 = confusion_matrix.iloc[2]
+    e = pd.DataFrame({})
+    e['label'] = ['Positif', 'Negatif', 'Netral','total']
+    e['precision'] = [
+        c1[0]/(c1[0]+c2[0]+c3[0])*100, 
+        c2[1]/(c1[1]+c2[1]+c3[1])*100, 
+        c3[2]/(c1[2]+c2[2]+c3[2])*100, 
+        0,
+    ]
+    e['recall'] = [
+        c1[0]/(c1[0]+c1[1]+c1[2])*100, 
+        c2[1]/(c2[0]+c2[1]+c2[2])*100, 
+        c3[2]/(c3[0]+c3[1]+c3[2])*100, 
+        0,
+    ]
+    e['f1_score'] = [
+        e['precision'][0]*e['recall'][0] / e['precision'][0]+e['recall'][0]*100, 
+        e['precision'][1]*e['recall'][1] / e['precision'][1]+e['recall'][1]*100, 
+        e['precision'][2]*e['recall'][2] / e['precision'][2]+e['recall'][2]*100, 
+        0,
+    ]
+    z1 = c1[0]+c2[1]+c3[2]
+    z2 = c1[1]+c1[2]+c2[0]+c2[2]+c3[0]+c3[1]
+    e['accuracy'] = [
+        z1/(z1+z2)*100,
+        z1/(z1+z2)*100,
+        z1/(z1+z2)*100,
+        0,
+    ]
+    e['precision'][3] = (e['precision'][0]+e['precision'][1]+e['precision'][2])/3
+    e['recall'][3] = (e['recall'][0]+e['recall'][1]+e['recall'][2])/3
+    e['f1_score'][3] = (e['f1_score'][0]+e['f1_score'][1]+e['f1_score'][2])/3
+    e['accuracy'][3] = (e['accuracy'][0]+e['accuracy'][1]+e['accuracy'][2])/3
+    z = pd.DataFrame(e, columns=['label','precision','recall','f1_score','accuracy'])
+
+    return z 
+
+def f1score(confusion_matrix):
+    a = (confusion_matrix.iloc[0][0]+confusion_matrix.iloc[1][1]+confusion_matrix.iloc[2][2])
+    b = (confusion_matrix.iloc[0][0]+confusion_matrix.iloc[0][1]+confusion_matrix.iloc[1][0]+confusion_matrix.iloc[1][1]
+        +confusion_matrix.iloc[0][2]+confusion_matrix.iloc[1][2]+confusion_matrix.iloc[2][2]+confusion_matrix.iloc[2][0]
+        +confusion_matrix.iloc[2][1]
+    )
+    return  a/b 
+
+
 # perhitungan posterior probability
 def score_probnb(data, n_dok, n_jumpos, n_jumneg, n_jumnet):
     # perkalian semua score di dataframe
