@@ -53,16 +53,15 @@ def datasetupload():
 def load_dataset_processed():
     ef = pd.read_csv('data/pre/all.csv',sep='`')
     filename_raw = pd.DataFrame(ef, columns=['tweets','label'])
-    filename_raw['label_name'] = filename_raw['label']
-    filename_raw['label'] = filename_raw['label'].replace({'negatif': 0, 'positif':1, 'netral':2})
+    filename_raw['label_name'] = filename_raw['label'].str.lower()
+    filename_raw['label'] = filename_raw['label'].str.lower().replace({'negatif': 0, 'positif':1, 'netral':2})
     
     v = text_preprocesing(filename_raw)
     filename_raw["tweet_tokens_stemmed"] = v[0]
     filename_raw["text_token"] = v[1]
     filename_raw["tweet_list"] = filename_raw["tweet_tokens_stemmed"].astype(str).apply(convert_text_list)
 
-    train = filename_raw.sample(frac=0.8, random_state=100)
-    print(train)
+    train = filename_raw.sample(frac=0.7, random_state=100)
     # train = filename_raw.sample(frac=0.8)
     test = filename_raw[~filename_raw.index.isin(train.index)]
     
@@ -76,6 +75,7 @@ def load_dataset_processed():
     df_kamusdata = pd.DataFrame(list(IDF.items()),columns = ['term','idf'])
     df_kamusdata['df'] = pd.DataFrame(list(DF.values()), columns = ['df'])
     gk = train.groupby('label')
+    #print(gk.first())
     n_dok = gk.size()
     # print(n_dok)
     df_kamusdata_pos = gk.get_group(1)
@@ -135,28 +135,14 @@ def chi():
     out = df['text_token'].str.split().explode().to_frame('text').join(df['label_name']).assign(value=1)
     out = out.pivot_table('value', 'text', 'label_name', aggfunc='count', fill_value=0)
     out = out.assign(count=lambda x: x.sum(axis=1))
-    out = out.assign(evpos=0)
-    out = out.assign(evneg=0)
-    out = out.assign(evnet=0)
-    out = out.assign(evtot=0)
-    out = out.assign(chipos=0)
-    out = out.assign(chineg=0)
-    out = out.assign(chinet=0)
-    out = out.assign(chitot=0)
-    out = out.astype({
-        'positif':'float',
-        'negatif':'float',
-        'netral':'float',
-        'count':'float',
-        'evpos':'float',
-        'evneg':'float',
-        'evnet':'float',
-        'evtot':'float',
-        'chipos':'float',
-        'chineg':'float',
-        'chinet':'float',
-        'chitot':'float'
-    })
+    out = out.assign(evpos=0.0)
+    out = out.assign(evneg=0.0)
+    out = out.assign(evnet=0.0)
+    out = out.assign(evtot=0.0)
+    out = out.assign(chipos=0.0)
+    out = out.assign(chineg=0.0)
+    out = out.assign(chinet=0.0)
+    out = out.assign(chitot=0.0)
     totpos = float(out['positif'].sum())
     totneg = float(out['negatif'].sum())
     totnet = float(out['netral'].sum())
@@ -182,6 +168,7 @@ def chi():
         out.at[i,'chineg'] = chifs(oneg,evpos)
         out.at[i,'chinet'] = chifs(onet,evpos)
         out.at[i,'chitot'] = out.at[i,'chipos']+ out.at[i,'chineg']+out.at[i,'chinet']
+        print(out.at[i,'chitot'])
     out.to_csv('data/post/dataset_chi.csv', sep='`')
 
 def chi_after():
@@ -330,7 +317,7 @@ def naivebayes():
     word_cloud_pos=get_wordcloud(dict(a5[['term','TF-IDF_dict']].values))
     word_cloud_neg=get_wordcloud(dict(a6[['term','TF-IDF_dict']].values))
     word_cloud_net=get_wordcloud(dict(a7[['term','TF-IDF_dict']].values))
-    print(confusion_matrix[0])
+    #print(confusion_matrix[0])
     return render_template("nb.html",
                                     show=show.to_html(classes="table"),
                                     confusion_matrix=confusion_matrix.to_html(classes="table"),
